@@ -1,4 +1,4 @@
-package ejercicio1;
+package exercise1;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.net.Socket;
 import java.util.Scanner;
 
-public class Cliente {
+public class Client {
     public static void main(String[] args) {
 
         final int PORT = 5001;

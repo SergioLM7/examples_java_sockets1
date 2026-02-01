@@ -5,7 +5,7 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 
-public class Cliente {
+public class Client {
     public static void main(String[] args) {
 
         final String HOST = "127.0.0.1";

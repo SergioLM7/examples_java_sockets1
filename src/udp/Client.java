@@ -3,7 +3,7 @@ package udp;
 import java.io.IOException;
 import java.net.*;
 
-public class Cliente {
+public class Client {
     public static void main(String[] args) {
 
         //Puerto del servidor

@@ -6,7 +6,7 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.net.SocketException;
 
-public class Servidor {
+public class Server {
     public static void main(String[] args) {
 
         //Puerto en el que escucha el servidor
