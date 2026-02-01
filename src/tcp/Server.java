@@ -24,6 +24,8 @@ public class Server {
 
             //Un servidor siempre está a la escucha esperando a que el cliente se conecte
             while(true) {
+
+                //El servidor espera/se bloquea hasta que un cliente se conecte (similar a dormir un hilo)
                 socket = serverSocket.accept();
 
                 System.out.println("Cliente conectado");
