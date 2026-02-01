@@ -39,7 +39,7 @@ public class Servidor {
                 serverOn = false;
             }
         } catch (IOException e) {
-            System.out.println("Error con el cliente: " + e.getMessage());
+            System.out.println("Error en el servidor: " + e.getMessage());
         }
     }
 }
