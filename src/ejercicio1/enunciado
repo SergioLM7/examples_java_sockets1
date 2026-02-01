@@ -1,0 +1,10 @@
+2) TCP Interactivo: "Chat simple 1 turno"
+
+Objetivo: cliente manda mensaje, servidor responde mensaje desde su teclado
+
+Checklist:
+    -Cliente lee del teclado y envía al servidor
+    -Servidor lee el mensaje del cliente y lo imprime
+    -Servidor pide texto por teclado y responde
+    -Cliente imprime respuesta
+    -Control de errores y cierre
