@@ -13,11 +13,9 @@ public class Client {
         byte[] buffer = new byte[1024];
 
         //Obtener la dirección IP del servidor
-        try {
+        try (//Creamos el socket datagrama del cliente
+                DatagramSocket socketUDP = new DatagramSocket()){
             InetAddress serverAddress = InetAddress.getByName("localhost");
-
-            //Creamos el socket datagrama del cliente
-            DatagramSocket socketUDP = new DatagramSocket();
 
             String mensaje = "¡Hola mundo desde el cliente!";
 
@@ -43,9 +41,9 @@ public class Client {
             System.out.println(mensaje);
 
         } catch (UnknownHostException | SocketException e) {
-            throw new RuntimeException(e);
+            System.out.println("Error: " + e.getMessage());
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            System.out.println("Error de entrada/salida: " + e.getMessage());
         }
 
     }

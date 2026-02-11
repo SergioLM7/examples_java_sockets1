@@ -44,9 +44,9 @@ public class Server {
             }
 
         } catch (SocketException e) {
-            throw new RuntimeException(e);
+            System.out.println("Error en la conexión: " + e.getMessage());
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            System.out.println("Error en el servidor UDP: " + e.getMessage());
         }
 
     }
