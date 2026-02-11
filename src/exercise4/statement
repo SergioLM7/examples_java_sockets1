@@ -1,0 +1,14 @@
+TCP: Login + menú
+
+Objetivo:
+El servidor tiene un minisistema ->
+    1. pide usuario/contaseña
+    2.si está OK, muestra un menú -> 1)Hora, 2)Nº Random, 3)Salir
+
+Checklist:
+-El cliente envía usuario/contraseña
+-El servidor valida (con HashMap)
+-Si fallo -> devuelve "denegado" y corta
+-Si está OK -> mantiene conexión con Menú
+-Opción hora -> devuelve Fecha y hora
+-Opción random -> devuelve un número aleatorio
