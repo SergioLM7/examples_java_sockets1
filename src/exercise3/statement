@@ -1,0 +1,10 @@
+TCP Multi-cliente (con hilos)
+
+Objetivo: que el servidor sea capaz de entender varios clientes a la vez (uno por hilo)
+
+Checklist:
+-Servidor en bucle infinito aceptando clientes
+-Por cada .accept(), crea un Thread o Runnable
+-El hilo va a gestionar la comunicación con ese cliente
+-Logs: "cliente conectado", "cliente desconectado"...
+-El servidor no se bloquea con un solo cliente
