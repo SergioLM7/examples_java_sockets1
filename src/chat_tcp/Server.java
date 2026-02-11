@@ -21,7 +21,7 @@ public class Server {
         ) {
             System.out.println("Cliente conectado correctamente.");
 
-            //Hilo receptor de los clientes del Cliente
+            //Hilo receptor de los mensajes del Cliente
             Thread receptor = new Thread(() -> {
 
                 boolean listening = true;
@@ -31,7 +31,7 @@ public class Server {
                     String message;
 
                     while (listening && (message = in.readLine()) != null) {
-                        System.out.println("\nClient: " + message);
+                        System.out.println("\nCliente: " + message);
                         System.out.println("Tú: ");
 
                         //Finalizamos el hilo si el cliente envía "exit"
